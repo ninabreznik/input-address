@@ -1,11 +1,11 @@
 {
   "name": "input-address",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "An address-input-type component built with bel and csjs-inject",
   "main": "src/index.js",
   "scripts": {
-      "start": "budo src/index.js:bundle.js --dir ./ --live --open",
-      "build": "browserify src/index.js > bundle.js"
+    "start": "budo src/index.js:bundle.js --dir ./ --live --open",
+    "build": "browserify src/index.js > bundle.js"
   },
   "repository": {
     "type": "git",

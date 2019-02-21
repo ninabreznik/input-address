@@ -8,7 +8,7 @@ function displayAddressInput({theme: {classes: css}, type, cb}) {
 
   const input = bel`
       <div class=${css.addressField}>
-        <input class=${css.inputField} id=${type} oninput=${validate} placeholder='0x633...'>
+        <input class=${css.inputField} data-type=${type} oninput=${validate} placeholder='0x633...'>
       </div>`
 
   return input

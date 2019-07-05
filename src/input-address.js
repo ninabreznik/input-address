@@ -6,11 +6,11 @@ module.exports = displayAddressInput
 
 function displayAddressInput ({ theme: { classes: css }, cb }) {
   const input = bel`<div class=${css.addressField}>
-    <input class=${css.inputField} data-type="address" oninput=${validate} placeholder='0x633...'>
+    <input class=${css.inputField} data-type="address" onclick="${(e)=>e.target.select()}" oninput=${validate} placeholder='0x633...'>
   </div>`
   return input
   function validate (e) {
     const value = e.target.value
-    cb(validator.getMessage('address', value), value)
+    cb(validator.getMessage('address', value), e.target, value)
   }
 }
